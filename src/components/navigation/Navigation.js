@@ -29,7 +29,7 @@ function Navigation() {
                 </div>  
             </header>
             <div className="navigation">
-                Customer service: +1 (778) 927-4028
+                Customer service: +1 (999) 999-9999
             </div>
         </>
     );
