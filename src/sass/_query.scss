@@ -1,0 +1,197 @@
+.query {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background: #5860721f;
+    min-height: calc(100vh - 29rem);
+    padding: 5rem 12rem;
+
+    &__question {
+        grid-column: 1/4;
+        padding-top: 3rem;
+
+        &-box {
+            transform: scale(1.4);
+            margin-right: 1.2rem;
+        }
+
+        &-box-label {
+            font-size: 1.5rem;
+        }
+
+        &-reset {
+            float: right;
+            margin-right: 7rem;
+            color: #373e4e;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 1.5rem;
+            height: 3rem;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover {
+                color: #ec833f;
+            }
+        }
+
+        &-section {
+            margin: 4rem 0;
+            background: white;
+            border-radius: 0.5rem;
+            padding: 3rem;
+            width: 24rem;
+            box-shadow: #00000047 0px 2px 3px;
+            
+            h2 {
+                padding-bottom: 2rem;
+                color: #373e4e;
+                font-size: 1.6rem;
+            }
+        }
+        &-container {
+            &.checkbox-container {
+                margin-bottom: 2rem;
+            }
+            
+            &-dropdown {
+                height: 4rem;
+                width: 17rem;
+                border-radius: 0.4rem;
+                background: white;
+                outline: none;
+                border: 1px solid #586072;
+                margin-bottom: 2rem;
+            }
+        }
+        
+    }
+
+    &__results {
+        grid-column: 4/13;
+        margin: 3rem 0 0 3rem;
+
+        &-sort {
+
+            &-button {
+                border: none;
+                outline: none;
+                background: transparent;
+                height: 3rem;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                cursor: pointer;
+                float: right;
+                transition: all 0.2s;
+
+                &:hover {
+                    color: #ec833f;
+                }
+
+                .fa-solid.fa-arrow-right-arrow-left {
+                    font-size: 1.7rem;
+                    margin-right: 1rem;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+        &-item {
+            margin-top: 0;
+            background: white;
+            box-shadow: #00000047 0px 2px 3px;
+            height: 18rem;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.2s;
+            cursor: pointer;
+            margin-bottom: 3rem;
+
+            &.added-to-basket {
+                border: 2px solid #ec833f;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            &-bestseller {
+                position: absolute;
+                right: 0;
+                font-size: 1.5rem;
+                top: 1rem;
+                right: 1rem;
+                color: #ec833f;
+            }
+            
+            &-img {
+                max-width: 22rem;
+                min-width: 23rem;
+                align-self: center;
+                text-align: center;
+
+                &-element {
+                    max-height: 16rem;
+                    max-width: 22rem;
+                }
+            }
+
+            &-label {
+                grid-column: 2/10;
+                padding: 3rem;
+                font-size: 2.5rem;
+                background: #dfdfdf;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &-brand {
+                    font-weight: 700;
+                    color: #586072;
+                }
+            }
+
+            &-price {
+                grid-column: 10/13;
+                font-size: 2rem;
+                margin: auto;
+                position: relative;
+                width: 19rem;
+
+                &-discount {
+                    font-size: 2.5rem;
+                    color: #ec833f;
+                    font-weight: 600;
+                    text-align: center;
+
+                    &-amount {
+                        font-size: 1.5rem;
+                        position: absolute;
+                        top: -5rem;
+                        right: 1rem;
+                        font-weight: 500;
+                        background: #ec833f;
+                        color: white;
+                        padding: 0.5rem;
+                        border-radius: 3px;
+                    }
+
+                    i.fa-solid.fa-tag {
+                        margin-right: 1rem;
+                    }
+                }
+                &-real {
+                    text-align: center;
+                    font-weight: 600;
+                    &.sale {
+                        text-decoration: line-through;
+                        font-weight: 400;
+                        color: #787878;
+                    }
+                }
+            }
+        }
+    }
+}    

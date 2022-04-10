@@ -1,0 +1,115 @@
+.showroom {
+    background: #5860721f;
+    padding: 2rem 12rem;
+    position: relative;
+    
+    &__label {
+        font-size: 3rem;
+        &--orange {
+            color: #ec833f;
+        }
+
+        &--more {
+            float: right;
+            border: none;
+            outline: none;
+            font-size: 1.5rem;
+            transition: all 0.2s;
+            cursor: pointer;
+            margin-top: 1rem;
+            margin-right: 3rem;
+
+            i.fa.fa-angle-right {
+                font-size: 1rem;
+            }
+
+            &:hover {
+                color: #ec833f;
+            }
+        }
+    }
+
+    &__card-list {
+        display: grid;
+        padding: 3rem 0;
+        grid-gap: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 0fr));
+    }
+
+    &__card-container {
+        position: relative;
+        transition: 0.2s all;
+
+        .item-bestseller {
+            position: absolute;
+            color: #ec833f;
+            font-size: 1.2rem;
+            right: 1rem;
+            top: 1rem;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            .showroom__card-label {
+                font-size: 1.5rem;
+                color: #f3832d;
+            }
+        }
+    }
+
+    &__card {
+        width: 22rem;
+        height: 27rem;
+        border: 2px solid transparent;
+        border-radius: 1rem;
+        box-shadow: #00000047 0px 2px 3px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        cursor: pointer;
+        margin-right: 3rem;
+        margin-bottom: 3rem;
+        transition: 0.2s all;
+
+        &-price {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+
+            &.sale {
+                font-size: 1.2rem;
+                text-decoration: line-through;
+            }
+        }
+
+        &-new-price {
+            color: #ec833f;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        &-icon-container{
+            height: 16rem;
+            width: 15rem;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        &-icon {
+            width: 12rem;
+        }
+
+        &-label {
+            font-size: 1.5rem;
+            transition: 0.5s all;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        &:hover {
+            border: 2px solid #f3832d;
+        }
+    }
+}

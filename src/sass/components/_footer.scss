@@ -1,0 +1,22 @@
+.footer {
+    background-color: #373e4e;
+    height: 12rem;
+
+    &__follow {
+        height: 6rem;
+        background: #586072;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-label {
+            font-size: 2rem;
+            padding-right: 2rem;
+        }
+        
+        &-icon {
+            font-size: 3rem;
+        }
+    }
+}

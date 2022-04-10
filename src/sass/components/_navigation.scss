@@ -1,0 +1,117 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10rem;
+    align-items: center;
+    margin: 1rem 12rem;
+    margin-top: 2rem;
+    
+    a {
+        grid-column: 1;
+    }
+
+    &__icon {
+        width: 10rem;
+    }
+
+    &__title {
+        grid-column: 2 / 5;
+        font-size: 4rem;
+        color: #ec833f;
+        justify-content: flex-end;
+        margin-left: 4rem;
+    }
+
+    &__search {
+        position: relative;
+        grid-column: 5 / 10;
+
+        input#search {
+            height: 5rem;
+            border: 1px solid #0000001f;
+            width: 100%;
+            padding-left: 2rem;
+            border-radius: 3px;
+        }
+        
+        i.fas.fa-search {
+            position: absolute;
+            height: 5rem;
+            font-size: 3rem;
+            background: #f3832d;
+            color: white;
+            width: 5rem;
+            left: -5rem;
+            padding: 1rem;
+            border-radius: 3px;
+        }
+        
+    }
+
+    &__login {
+        grid-column: 11;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: flex-end;
+
+        &-icon {
+            width: 3rem;
+        }
+
+        &-label {
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding-left: 0.5em;
+        }
+    }
+
+    &__cart {
+        grid-column: 12;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        justify-content: flex-end;
+
+        &-total {
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            background: #ec833f;
+            text-align: center;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            right: 3rem;
+            top: -0.7rem;
+            opacity: 0.9;
+            padding-top: 3px;
+        }
+
+        &-icon {
+            width: 2.5rem;
+        }
+
+        &-label {
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding-left: 0.5em;
+        }
+    }
+}
+
+.navigation {
+    position: absolute;
+    height: 4rem;
+    width: 100%;
+    left: 0;
+    background-color: #ec833f;
+    color: white;
+    font-size: 1.5rem;
+    text-align: end;
+    padding-top: 1rem;
+    padding-right: 12rem;
+    font-weight: 600;
+}

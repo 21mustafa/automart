@@ -1,0 +1,24 @@
+.show-all {
+    padding: 0 50%;
+    height: 6rem;
+    width: 100%;
+    background-color: #ebecee;
+    &__button {
+        background-color: white;
+        border-radius: 50rem;
+        margin: 0 auto;
+        width: 15rem;
+        border: 2px solid #586072;
+        outline: none;
+        height: 4rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+            color: #ec833f;
+            border: 2px solid #ec833f;
+        }
+    }
+    
+}

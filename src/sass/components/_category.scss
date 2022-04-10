@@ -1,0 +1,59 @@
+.category {
+    background: #5860721f;
+    padding: 5rem 12rem;
+    a {
+        text-decoration: none;
+    }
+    
+    
+    &__label {
+        margin-bottom: 4rem;
+        font-size: 3rem;
+        &--orange {
+            color: #ec833f;
+        }
+    }
+
+    &__card-list {
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 0fr))
+    }
+
+    &__card {
+        width: 22rem;
+        height: 16rem;
+        border: 2px solid transparent;
+        border-radius: 1rem;
+        box-shadow: #00000047 0px 2px 3px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.5s all;
+        cursor: pointer;
+
+        &-icon-container{
+            height: 12rem;
+        }
+
+        &-icon {
+            width: 12rem;
+        }
+
+        &-label {
+            font-size: 1.5rem;
+            transition: 0.5s all;
+            color: black;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            border: 2px solid #f3832d;
+            .category__card-label {
+                font-size: 1.5rem;
+                color: #f3832d;
+            }
+        }
+    }
+}
